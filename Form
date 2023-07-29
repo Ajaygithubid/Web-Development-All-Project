@@ -6,19 +6,31 @@
     <title>Form</title>
 </head>
 <body>
-    <fieldset>
+    <fieldset>  
         <legend>Enquiery</legend>
     <form>
-        Name: <input type="text" placeholder="Enter your name"/>
+        Name: <input type="text" placeholder="Enter your name" required="" autofocus=""/>
         <br/>
         <br/>
-        Address: <textarea placeholder="Enter your address"></textarea>
+        Address: <textarea placeholder="Enter your address" required=""></textarea>
         <br/>
         <br/>
         Gender: 
         <input type="radio" value="M" name="gender"/>Male
         <input type="radio" value="F" name="gender"/>Female
         <input type="radio" value="O" name="gender"/>Other
+        <br/>
+        <br/>
+        Email:
+        <input type="email" name="email" required=""/>
+        <br/>
+        <br/>
+        Password:
+        <input type="password" name="password" required/>
+        <br/>
+        <br/>
+        Age:
+        <input type="number" name="age"required/>
         <br/>
         <br/>
         Country:
@@ -40,7 +52,11 @@
         <br/>
         <br/>
         Image:
-        <input type="file" name="iamge"/>
+        <input type="file" name="iamge" required=""/>
+        <br/>
+        <br/>
+        Calender:
+        <input type="datetime-local" name="datetime-local"/>
     </fieldset>
     </form>
 </body>
